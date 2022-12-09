@@ -119,10 +119,10 @@ AGE, IS_TENT) as model_prediction from TEST_INPUT;"
 
 Use the three "Db2 RESTful..." notebooks to create a REST services that can call the UDF to make a prediction.  Two services are created -- one where you give it the features for the model from your applicaiton and the other where the features are already in a table, and you point the service to the correct row in the table.  This would be useful in mobile and other applications where it is not convenient to connect to the database directly, but instead call a service that gets the prediction for you.   
 
-- 1.  Download the notebooks to a directory where you keep Jupyter notebooks
-- 2.  Edit the Db2 RESTful Prep External Py UDF.ipynb.ipynb notebook to use your database connect information and credentials and run it to prepare your database with the needed objects and grants.
-- 3.  Edit the Db2 RESTful Get Token for External Py UDF.ipynb notebook to use your database connect information and credentials. It will be called by the notebook that creates and uses the services to get the needed token for the Db2 REST endpoint.
-- 4.   Run the Db2 RESTful External Py UDF.ipynb for examples of creating and running services that use the UDF.
+1.  Download the notebooks to a directory where you keep Jupyter notebooks
+2.  Edit the Db2 RESTful Prep External Py UDF.ipynb.ipynb notebook to use your database connect information and credentials and run it to prepare your database with the needed objects and grants.
+3.  Edit the Db2 RESTful Get Token for External Py UDF.ipynb notebook to use your database connect information and credentials. It will be called by the notebook that creates and uses the services to get the needed token for the Db2 REST endpoint.
+4.   Run the Db2 RESTful External Py UDF.ipynb for examples of creating and running services that use the UDF.
 
 ## 7. Reference and Further Reading <a name="Reference"></a>
 
